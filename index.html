@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="conatiner">
+        <div class="hero">
+            <div class="section-1">
+                <div class="history">
+                    <input type="text" placeholder="0" class="historyValue" disabled>
+                </div>
+                <div class="result">
+                    <input type="text" placeholder="0" class="answer" disabled>
+                </div>
+            </div>
+
+            <div class="section2">
+                <button id="All-Clear">AC</button>
+                <button id="escape"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="opeartor-root" id="root">&radic;</i></button>
+                <button class="opeartor" data-operator="+">+</button>
+
+                <button class="number-button" data-number="1">1</button>
+                <button class="number-button" data-number="2">2</button>
+                <button class="number-button" data-number="3">3</button>
+                <button class="opeartor" data-operator="-">-</i></button>
+
+                <button class="number-button" data-number="4">4</button>
+                <button class="number-button" data-number="5">5</button>
+                <button class="number-button" data-number="6">6</button>
+                <button class="opeartor" data-operator="*">x</button>
+
+                <button class="number-button" data-number="7">7</button>
+                <button class="number-button" data-number="8">8</button>
+                <button class="number-button" data-number="9">9</button>
+                <button class="opeartor" data-operator="/">/</button>
+
+                <button class="number-button" data-number="0">0</button>
+                <button onclick="appendDot()">.</button>
+                <button class="two-column" id="enter">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

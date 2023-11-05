@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.conatiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #032313,#000201);
+}
+
+.hero{
+    width: 25%;
+    height: 85vh;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #000201;
+
+    
+}
+
+.section-1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    padding: 1rem;
+    color: #fff;
+
+    & .history .result{
+        text-align: right;
+        width: 100%;
+    }
+
+    & .history{
+        height: 60%;
+        font-size: 1.5rem;
+
+    }
+
+    & .result{
+        height: 40%;
+        font-size: 2.5rem;
+        font-weight: bold;
+
+    }
+}
+
+input{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    color: #fff;
+    background-color: #000201;
+    border: none;
+    outline: none;
+}
+
+.answer{
+    font-size: 2rem;
+}
+
+.answer::placeholder{
+    font-size: 2rem;
+}
+input::placeholder{
+    font-size: 1.5rem;
+}
+
+.section2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    height: 60%;
+    
+
+    & button{
+        outline: none;
+        border: 1px #000201 solid;
+        background-color: #000201;
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+
+    & .opeartor{
+        background-color: #044144;
+        font-size: 1.4rem;
+    }
+
+    & .opeartor-root{
+        background-color: #044144;
+        font-size: 1.4rem;
+    }
+
+    & .two-column{
+        grid-column: span 2;
+        font-size: 1.4rem;
+        background-color: #1F988D;
+        border: 1px #1F988D solid;
+    }
+
+}
+
+button:hover{
+    background-color: rgba(46, 44, 44, 0.5);
+}
+
+.opeartor:hover{
+    background-color: #1F988D;
+}
+
+#root:hover{
+    background-color: #1F988D;
+}
+.two-column:hover{
+    background-color: rgb(6, 103, 108);
+    border: 1px rgb(6, 103, 108) solid;
+
+}
